@@ -27,8 +27,9 @@
                 padding: 0;
                 background-image: url(../assets/maxresdefault.jpg)
             }
-            a{ 
-                text-shadow: 5px 5px 6px black;
+            a.one{ 
+                text-decoration:none;
+                color:black;
             }
             ul.nav li a {
                 display: flex;
@@ -50,11 +51,12 @@
             }
             .main{
                 flex:40%;
+                background-image: url(../assets/wood\ plank.jpg)
             }
             .img1{
                 flex:60%;
-                text-align: center;
-                margin: 20px auto 20px auto;
+                text-align:center;
+                background-image: url(../assets/maxresdefault.jpg);
             }
             div.paragraph2{
                 display:flex;
@@ -62,18 +64,135 @@
             }
             .img2{
                 flex:60%;
+                text-align:center;
+                background-image: url(../assets/maxresdefault.jpg);
             }
             .main2{
                 flex:40%;
+                font-family:'Courier New', Courier, monospace;
             }
             div.paragraph3{
                 display: flex;
+                flex-wrap:wrap;
             }
             .main3{
                 flex: 40%;
+                font-family:'Courier New', Courier, monospace
             }
             .img3{
                 flex: 60%;
+                text-align:center;
+                background-image: url(../assets/maxresdefault.jpg);
+            }
+            p {
+                color:white;
+                text-shadow:5px 5px 6px black;
+                text-align:justify;
+            }
+            .image1{
+                margin: 50px auto auto auto;
+                background-color:white;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 4px 4px 5px black;
+                width:500px;
+            }
+            p.paragraph1{
+                border-radius:10px;
+                box-shadow: 5px 5px 6px black;
+                background-color:white;
+                color: black;
+                width:500px;
+                height:490px;
+                font-size:21.5px;
+                font-family:'Courier New', Courier, monospace;
+                text-align:center;
+                margin: 50px auto 50px 50px;
+            }
+            div.subtitle1{
+                border-radius:10px;
+                width:300px;
+                background-color:white;
+                box-shadow:5px 5px 6px black;
+                margin-left:300px;
+                font-size:23px;
+            }
+            div.subtitle1:hover{
+                color:white;
+                background-color:black;
+                box-shadow:5px 5px 6px white;
+            }
+            a:hover{
+                color:white;
+            }
+            p.paragraph2{
+                border-radius:10px;
+                box-shadow: 5px 5px 6px black;
+                background-color:white;
+                color: black;
+                width:500px;
+                height:290px;
+                font-size:21.5px;
+                font-family:'Courier New', Courier, monospace;
+                text-align:center;
+                margin: 50px auto 50px 60px;
+                font-size:18px;
+            }
+            .image2{
+                margin: 50px auto auto auto;
+                background-color:white;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 4px 4px 5px black;
+                width:auto;
+            }
+            div.subtitle2{
+                border-radius:10px;
+                width:500px;
+                background-color:white;
+                box-shadow:5px 5px 6px black;
+                margin-left:200px;
+                font-size:23px;
+            }
+            div.subtitle2:hover{
+                color:white;
+                background-color:black;
+                box-shadow:5px 5px 6px white;
+            }
+            p.paragraph3{
+                border-radius:10px;
+                box-shadow: 5px 5px 6px black;
+                background-color:white;
+                color: black;
+                width:500px;
+                height:290px;
+                font-size:21.5px;
+                font-family:'Courier New', Courier, monospace;
+                text-align:center;
+                margin: 50px auto 50px 50px;
+                font-size:18px;
+            }
+            .image3{
+                margin: 50px auto auto auto;
+                background-color:white;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 4px 4px 5px black;
+                width:auto;
+            }
+            div.subtitle3{
+                border-radius:10px;
+                width:500px;
+                background-color:white;
+                box-shadow:5px 5px 6px black;
+                margin-left:200px;
+                font-size:23px;
+                text-align:center;
+            }
+            div.subtitle3:hover{
+                color:white;
+                background-color:black;
+                box-shadow:5px 5px 6px white;
             }
         </style>
     </head>
@@ -105,21 +224,27 @@
                 </p>
             </div>
             <div class="img1">
-                <img class="image1" src="../assets/mansion.webp"
-                    alt="mansion"
-                    title="Woodland Mansion"/>
-                <h3>The Woodland Mansion in an Isometric View</h3>
+                <div class="image1">
+                    <img src="../assets/mansion.webp"
+                        alt="mansion"
+                        title="Woodland Mansion"/>
+                </div>
+                <div class="subtitle1">
+                    <h3><a class="one" href="">The Woodland Mansion</a></h3>
+                </div>
             </div>
         </div>
         <div class="paragraph2">
             <div class="img2">
-                <img src="../assets/150px-Vindicator_attacking.png"
+                <img class="image2" src="../assets/150px-Vindicator_attacking.png"
                     alt="vindicator"
                     title="Vindicator"/>
-                <h3>A Vindicator. (It is currently attacking.)</h3>
+                <div class="subtitle2">
+                    <h3><a class="one" href="">A Vindicator (It is currently attacking)</a></h3>
+                </div>
             </div>
             <div class="main">
-                <p>
+                <p class="paragraph2">
                     Some of the mobs that can be found in this structure include the vindicator, evoker, and the allay, alongside Vexes that can also be spawned once an evoker is provoked by a player. Some of these mobs
                     espeially the vindicator, can deal tons of damage even with full enchanted armor sets. Vexes are 
                     also really dangerous as when spawned from evokers, they hold iron swords that do a lot of damage. They
@@ -131,7 +256,7 @@
         </div>
         <div class="paragraph3">
             <div class="main">
-                <p>
+                <p class="paragraph3">
                     A woodland mansion also has many different rooms, each containing specific loot. Some of these 
                     rooms may include things like bookshelves, jail cells containing allays, maps, etc. There are also 
                     secret rooms, each containing better loot, however, they cannot be accessed normally and must be 
@@ -142,10 +267,13 @@
                 </p>
             </div>
             <div class="img3">
-                <img src="../assets/images.jpg"
+                <img class="image3" src="../assets/images.jpg"
                     alt="secret"
                     title="Secret room"/>
-                <h3>The secret lava room containing the diamond block. (It is opened up.)</h3>
+                    <div class="subtitle3">
+                        <h3><a class="one" href="">The secret lava room containing the diamond block (It is opened up)
+                        </a></h3>
+                    </div>
             </div>
         </div>
         <section class="corner">
