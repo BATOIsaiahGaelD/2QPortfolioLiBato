@@ -6,8 +6,10 @@
         <title>All About Our Favorite Minecraft Structures</title>
         <link rel="icon" href="../assets/minecrafticon-png.png" sizes="64x64" type="image/png">
         <style>
-            table, th, td {
-                border: 2px solid black;
+            * {
+                box-sizing: border-box;
+                padding:0px;
+                margin:0px;
             }
             header{
                 background-image: url(../assets/cobble.webp);
@@ -44,9 +46,6 @@
                 display:block;
                 padding: 10px 10px black;
                 background-color: rgb(101, 71, 71)
-            }
-            * {
-                box-sizing: border-box;
             }
             div.paragraph1 {
                 display: flex;
@@ -124,12 +123,6 @@
                 color:white;
                 background-color:black;
                 box-shadow:5px 5px 6px white;
-            }
-            a:visited {
-                color:rgb(59, 59, 59);
-            }
-            a:hover{
-                color:white;
             }
             p.paragraph2{
                 border-radius:10px;
@@ -232,6 +225,15 @@
                 text-decoration:none;
                 color:white;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            a.helplink:visited {
+                color:rgb(59, 59, 59);
+            }
+            a.helplink:hover{
+                color:lightblue;
+            }
+            table, th, td {
+                border: 2px solid black;
             }
             div.table{
                 padding-top:10px;
